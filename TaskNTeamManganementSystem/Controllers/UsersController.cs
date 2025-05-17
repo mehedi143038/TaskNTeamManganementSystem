@@ -8,7 +8,7 @@ using TaskNTeamManganementSystem.Application.Queries;
 
 namespace TaskNTeamManganementSystem.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
