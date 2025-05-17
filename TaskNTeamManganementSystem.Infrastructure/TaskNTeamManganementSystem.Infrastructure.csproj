@@ -1,15 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>ed93415d-005e-44e0-9a3a-6ee6ee9efcc8</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.16" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.16">
       <PrivateAssets>all</PrivateAssets>
@@ -20,13 +17,11 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1-Preview.1" />
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\TaskNTeamManganementSystem.Application\TaskNTeamManganementSystem.Application.csproj" />
-    <ProjectReference Include="..\TaskNTeamManganementSystem.Infrastructure\TaskNTeamManganementSystem.Infrastructure.csproj" />
+    <ProjectReference Include="..\TaskNTeamManganementSystem.Domain\TaskNTeamManganementSystem.Domain.csproj" />
   </ItemGroup>
 
 </Project>
