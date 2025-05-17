@@ -35,6 +35,7 @@ namespace TaskNTeamManganementSystem.Infrastructure.Extensions
 
             //services.AddScoped<ICustomDBConnection, CustomDBConnection>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITeamRepository, TeamRepository>();
             return services;
         }
     }
