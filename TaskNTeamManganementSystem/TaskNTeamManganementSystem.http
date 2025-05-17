@@ -1,0 +1,6 @@
+@TaskNTeamManganementSystem_HostAddress = http://localhost:5050
+
+GET {{TaskNTeamManganementSystem_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
